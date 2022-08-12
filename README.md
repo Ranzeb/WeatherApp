@@ -1,3 +1,31 @@
+Weather App is a simple React application that allow the user to search a specific city and retrieve information about current weather and next 5 days weather expectations.
+
+The application is built in React using the following APIs:
+
+Retrieve city information: https://rapidapi.com/wirefreethought/api/geodb-cities/  
+Retrieve weather information based on selected city: https://openweathermap.org/
+
+The API keys are hidden with a config.js file that's not pushed to github.
+
+You can set your own API credentials creating a config.js file with the following structure:
+
+const config = {
+    RAPID_API_KEY : '<INSERT_YOUR_RAPID_API_KEY>',
+    WEATHER_API_KEY : '<INSERT_YOUR_WEATHER_API_KEY>'
+}
+
+export default config;
+
+And then you can set you API's key in the Api.js.
+
+Future improvement:
+
+1. Set up an auth system to let the users create their own list of preferred cities so everytime the login, the app automatically shows the current weather of preferred cities.
+2. Improvement on next 5 days weather informations calculation.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
